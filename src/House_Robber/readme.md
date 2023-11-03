@@ -12,6 +12,9 @@ The solution `house_robber_cached` employs a `dfs` approach enhanced with the `@
 # Caveat
 ## Misinterpretation of the `dp` Array
 Initially, I mistakenly believed that the robber had three distinct robbery strategies, as depicted in the accompanying image:
+
 ![Incorrect Robbery Modes](3_wrong_modes.png)
 
 This misinterpretation led to an error in my approach, as I incorrectly assumed that the `dp` array should signify "The maximum value if this house is robbed," needlessly complicating the problem.
+
+However, for a more profound understanding of this question and the underlying reasons why the caveat has posed a challenge, one can explore the concept of 'Non-adjacent selection' within the question of 'House Robber III'.
