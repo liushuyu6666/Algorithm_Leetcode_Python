@@ -4,6 +4,11 @@ This problem falls within the category of standard dynamic programming challenge
 
 To illustrate, `best_robbery[3]` signifies the maximum value that the robber can accumulate by robbing houses from `house[0]` to `house[3]`.
 
+# Skills
+## Cache
+The solution `house_robber_cached` employs a `dfs` approach enhanced with the `@cache` decorator, which optimizes dynamic programming by storing and reusing the results of previous function calls, preventing redundant computations.
+
+
 # Caveat
 ## Misinterpretation of the `dp` Array
 Initially, I mistakenly believed that the robber had three distinct robbery strategies, as depicted in the accompanying image:
