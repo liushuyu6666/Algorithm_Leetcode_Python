@@ -11,5 +11,7 @@ We use a greedy algorithm to calculate the 'numsOfHouses' function, and then we 
 ## Binary Search
 In this context, the middle value is determined by the 'numsOfHouses' function. If `numsOfHouses(x)` is greater than or equal to `k`, it signifies that the robbed money can be reduced, and, consequently, the right pointer should be moved to left.
 
+The eventual answer will converge to a specific value within the array. This is achieved through binary search, where the 'middle' value is systematically reduced until it reaches a point where it cannot be further decreased. If the binary search identifies a value that satisfies all conditions but is not present in the array, it implies the existence of a smaller number within the array that also fulfills these conditions. Consequently, the binary search persists in decreasing the middle value until it locates such a suitable number.
+
 ## Greedy Algorithm
 To determine the maximum number of houses that can be robbed under a specified amount `x`, we employ a greedy algorithm. As we traverse the entire array, our approach is to prioritize robbing houses at the earliest opportunity, optimizing the overall outcome.
