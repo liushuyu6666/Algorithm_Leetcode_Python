@@ -1,5 +1,5 @@
 # Types
-## Minimize the maximum value
+## minimize the maximum value or maximize the minimum value
 In this problem, the 'capability' is defined as the maximum amount of money the robber can steal from a single house among all the houses they rob. The goal is to minimize this capability, making it a 'minimized maximum value' problem.
 
 To tackle this type of problem, we employ a binary search approach. We begin by assuming that the thief intends to steal a specific amount, denoted as 'x', and we want to determine the maximum number of houses he can rob under this amount, denoted as 'numsOfHouses'. We establish a function, denoted as $numsOfHouses = f(x)$, to represent this relationship.

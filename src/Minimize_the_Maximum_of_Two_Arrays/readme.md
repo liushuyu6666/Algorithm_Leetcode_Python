@@ -19,7 +19,7 @@ Subsequently, we employ the `check` function to assess whether the range $[1, x]
 The value of `x` should be iteratively reduced using the binary search algorithm.
 
 # Types
-## Minimize the maximum value
+## minimize the maximum value or maximize the minimum value
 To address 'Minimize the maximum value' questions, a crucial component is the 'check' function. This function takes a variable `x` (typically a numerical value) as an input parameter and assesses whether it satisfies all specified conditions, returning a Boolean output.
 
 Subsequently, a binary search algorithm is applied to iteratively reduce the value of `x` in order to minimize it.
