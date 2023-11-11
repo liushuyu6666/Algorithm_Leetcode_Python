@@ -26,6 +26,6 @@ It's particularly useful for swiftly calculating the sum within sliding windows.
 ![using prefix sum to slide windows](sliding_windows.png)
 
 ## Unordered Difference Array
-In the differences array (denoted as `diffs`), defined from the original array `original`, each `diffs[i]` is computed as `original[i] - original[i - 1]`. The primary application scenario for the difference array is the frequent modification of elements within a specific interval of the original array. For instance, to increment elements in the range `[i, j)` by `x`, instead of modifying all elements in this range, simply update `diffs[i] = diffs[i] + x` and `diffs[j] = diffs[j] - x`.
+In the differences array (denoted as `diffs`), defined from the original array `original`, each `diffs[i]` is computed as `original[i] - original[i - 1]`. The primary application scenario for the unordered difference array is to frequently increase or decrease elements within a specific range of the original array. For instance, to increment elements in the range `[i, j)` by `x`, instead of modifying all elements in this range, simply update `diffs[i] = diffs[i] + x` and `diffs[j] = diffs[j] - x`.
 
 ![how to get a differences array](differences_array.png)
