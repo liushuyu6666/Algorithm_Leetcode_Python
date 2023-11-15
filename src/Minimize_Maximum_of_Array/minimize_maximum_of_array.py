@@ -5,13 +5,13 @@ from typing import List
 class MinimizeMaximumOfArray:
     def minimizeArrayValue(self, nums: List[int]) -> int:
 
-        def canBeAccommodated(k: int) -> bool:
+        def check(x: int) -> bool:
             accommodation = 0
             for num in nums:
-                if num < k:
-                    accommodation += k - num
+                if num < x:
+                    accommodation += x - num
                 else:
-                    accommodation -= num - k
+                    accommodation -= num - x
                 if accommodation < 0:
                     return False
             return True
@@ -20,7 +20,7 @@ class MinimizeMaximumOfArray:
 
         while left <= right:
             middle = math.floor((left + right) / 2)
-            if canBeAccommodated(middle):
+            if check(middle):
                 right = middle - 1
             else:
                 left = middle + 1
