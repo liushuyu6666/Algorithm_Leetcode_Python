@@ -1,7 +1,7 @@
 from typing import List
 
 
-class MeetingRoomsII:
+class MeetingRoomsIISortedArray:
     def minMeetingRooms(self, intervals: List[List[int]]) -> int:
         come_in = [interval[0] for interval in intervals]
         come_out = [interval[1] for interval in intervals]

@@ -1,11 +1,11 @@
 import unittest
 
-from src.Meeting_Rooms_II.meeting_rooms_ii import MeetingRoomsII
+from src.Meeting_Rooms_II.meeting_rooms_ii_sorted_array import MeetingRoomsIISortedArray
 
 
 class TestMeetingRoomsII(unittest.TestCase):
     def test_meeting_room(self):
-        solution = MeetingRoomsII()
+        solution = MeetingRoomsIISortedArray()
 
         intervals = [[0, 30], [5, 10], [15, 20]]
         self.assertEqual(solution.minMeetingRooms(intervals), 2)
