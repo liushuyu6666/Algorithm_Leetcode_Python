@@ -3,7 +3,7 @@ import unittest
 from src.House_Robber_II.house_robber_ii import HouseRobberII
 
 
-class TestHouseRobber(unittest.TestCase):
+class TestHouseRobberII(unittest.TestCase):
     def test_rob(self):
         robber = HouseRobberII()
 

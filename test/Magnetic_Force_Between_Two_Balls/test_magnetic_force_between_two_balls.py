@@ -3,7 +3,7 @@ import unittest
 from src.Magnetic_Force_Between_Two_Balls.magnetic_force_between_two_balls import MagneticForceBetweenTwoBalls
 
 
-class TestMinimizeMaximumOfArray(unittest.TestCase):
+class TestMagneticForceBetweenTwoBalls(unittest.TestCase):
     def test_rob(self):
         solution = MagneticForceBetweenTwoBalls()
 

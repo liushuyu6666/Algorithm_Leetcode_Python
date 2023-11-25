@@ -1,11 +1,11 @@
 import unittest
 
-from src.Maximum_Tastiness_of_Candy_Basket.maximum_tastiness_of_candy_basket import MaximumTastinessofCandyBasket
+from src.Maximum_Tastiness_of_Candy_Basket.maximum_tastiness_of_candy_basket import MaximumTastinessOfCandyBasket
 
 
-class TestMaximumTastinessofCandyBasket(unittest.TestCase):
+class TestMaximumTastinessOfCandyBasket(unittest.TestCase):
     def test_tastiness(self):
-        solution = MaximumTastinessofCandyBasket()
+        solution = MaximumTastinessOfCandyBasket()
 
         price, k = [13, 5, 1, 8, 21, 2], 3
         self.assertEqual(solution.maximumTastiness(price, k), 8)

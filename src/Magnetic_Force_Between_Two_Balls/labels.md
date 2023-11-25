@@ -3,4 +3,4 @@
 
 # algorithms
 ## greedy algorithm
-### Greedy Algorithm in ordered differences array
+### greedy algorithm in ordered differences array

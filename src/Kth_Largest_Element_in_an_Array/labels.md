@@ -1,8 +1,8 @@
-# Algorithms
-## Heap
-### Binary Heap
-#### Max Heap
+# algorithms
+## heap
+### binary heap
+#### max heap
 
-# Types
-## Array
-### Sorted Array
+# types
+## array
+### sorted array

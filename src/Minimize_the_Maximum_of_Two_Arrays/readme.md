@@ -1,4 +1,4 @@
-# Overview
+# overview
 Suppose there exists a variable `x` and a range $[1, x]$, where:
 1. Some numbers are divisible only by `divisor1`.
 2. Some numbers are divisible only by `divisor2`.
@@ -18,7 +18,7 @@ Subsequently, we employ the `check` function to assess whether the range $[1, x]
 
 The value of `x` should be iteratively reduced using the binary search algorithm.
 
-# Types
+# types
 ## minimize the maximum value or maximize the minimum value
 To address 'Minimize the maximum value' questions, a crucial component is the 'check' function. This function takes a variable `x` (typically a numerical value) as an input parameter and assesses whether it satisfies all specified conditions, returning a Boolean output.
 

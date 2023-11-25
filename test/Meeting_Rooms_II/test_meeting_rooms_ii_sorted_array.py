@@ -3,7 +3,7 @@ import unittest
 from src.Meeting_Rooms_II.meeting_rooms_ii_sorted_array import MeetingRoomsIISortedArray
 
 
-class TestMeetingRoomsII(unittest.TestCase):
+class TestMeetingRoomsIISortedArray(unittest.TestCase):
     def test_meeting_room(self):
         solution = MeetingRoomsIISortedArray()
 

@@ -1,7 +1,7 @@
 from typing import List
 
 
-class MaximumTastinessofCandyBasket:
+class MaximumTastinessOfCandyBasket:
     def maximumTastiness(self, price: List[int], k: int) -> int:
         # x: possible tastiness
         # diffs: sorted differences

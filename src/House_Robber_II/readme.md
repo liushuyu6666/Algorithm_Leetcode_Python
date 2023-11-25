@@ -1,5 +1,5 @@
-# Skills
-## Circular Array Loop
+# skills
+## circular array loop
 To address circular array loops, one effective approach involves a classification discussion. In this context, the problem can be segmented into two scenarios:
 
 1. Robbing the first house

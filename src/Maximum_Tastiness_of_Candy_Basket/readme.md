@@ -1,6 +1,6 @@
-# Algorithms
-## Greedy Algorithm
-### Greedy Algorithm in ordered differences array
+# algorithms
+## greedy algorithm
+### greedy algorithm in ordered differences array
 This algorithm is employed for solving LeetCode problems [1552. Magnetic Force Between Two Balls
 ](https://leetcode.com/problems/magnetic-force-between-two-balls/description/) and [2517. Maximum Tastiness of Candy Basket](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/description/).
 

@@ -3,7 +3,7 @@ import unittest
 from src.Meeting_Rooms_II.meeting_rooms_ii_min_heap import MeetingRoomsIIMinHeap
 
 
-class TestMeetingRoomsII(unittest.TestCase):
+class TestMeetingRoomsIIMinHeap(unittest.TestCase):
     def test_meeting_room(self):
         solution = MeetingRoomsIIMinHeap()
 

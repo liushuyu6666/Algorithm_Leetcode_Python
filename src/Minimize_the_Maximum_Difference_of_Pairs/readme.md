@@ -1,4 +1,4 @@
 # algorithms
 ## greedy algorithm
-### Greedy Algorithm in ordered differences array
+### greedy algorithm in ordered differences array
 In contrast to problems like [1552. Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/description/) and [2517. Maximum Tastiness of Candy Basket](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/description/), which require distances between elements to be larger than or equal to a specified value `x`, the objective here involves pairs with distances smaller than or equal to `x`. The code is exceptionally lucid and direct in articulating the underlying algorithm for this scenario.
