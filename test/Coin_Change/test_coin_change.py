@@ -31,6 +31,9 @@ class TestCoinChange(unittest.TestCase):
         coins, amount = [1], 0
         self.assertEqual(coin.coinChange(coins, amount), 0)
 
+        coins, amount = [186, 419, 83, 408], 6249
+        self.assertEqual(coin.coinChange(coins, amount), 20)
+
     def test_coin_change_dp(self):
         coin = CoinChangeDP()
 
@@ -54,7 +57,6 @@ class TestCoinChange(unittest.TestCase):
 
         coins, amount = [1], 0
         self.assertEqual(coin.coinChange(coins, amount), 0)
-
 
 
 if __name__ == "__main__":
