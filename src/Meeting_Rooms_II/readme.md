@@ -1,5 +1,5 @@
 # types
-## enter and exit
+## get in and get off
 Think of it as entering a bus, exiting the bus, and counting the remaining passengers. The concept is straightforward: when a new meeting begins, eliminate meeting rooms that have already ended before the start time of the new meeting. Various algorithms can be applied based on how the end times of the meetings are stored.
 
 # algorithms
@@ -10,3 +10,6 @@ The min-heap here is solely responsible for storing and efficiently retrieving t
 
 ## sorted array
 Utilizing two sorted arrays is a straightforward approach. Simply sort arrays for start times and end times. Refer to the code for further details.
+
+## differences array
+This solution draws parallels with the approach in [car pooling](../Car_Pooling/readme.md#differences-array).
