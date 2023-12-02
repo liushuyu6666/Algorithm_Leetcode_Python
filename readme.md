@@ -72,3 +72,9 @@ len(stack) # length
 
 top = stack[-1] # top
 ```
+
+
+
+# Scope
+## Nested Function Utilizes Outer Scope Variables
+In the context of the question [convert binary search tree to sorted doubly linked list](src/Convert_Binary_Search_Tree_to_Sorted_Doubly_Linked_List/convert_binary_search_tree_to_sorted_doubly_linked_list.py), it's crucial to use the `nonlocal` keyword. This indicates that `prev` and `head` are variables from the outer scope, not local variables within the `inorder` function. Failure to use the `nonlocal` keyword would result in `prev` and `head` being treated as local variables.
