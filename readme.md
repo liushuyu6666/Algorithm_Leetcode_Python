@@ -56,4 +56,19 @@ The PVM abstracts the underlying hardware, providing a layer of virtualization t
   - **Mutability**: Tuples are immutable, which means once a tuple is created, you cannot change its values.
   - **Syntax**: Tuples are created using parentheses `( )`, examples: `my_tuple = (1, 2, 3, 'abc')`.
   - **Performance**: Tuples are generally more memory-efficient and can offer better performance in certain scenarios due to their immutability.
-## 
+
+
+## Stack
+While Python does not have a dedicated stack data structure, a list can effectively serve as a stack. A stack operates on the principle of FILO (First In, Last Out), where elements are added and removed from the top of the stack.
+
+```python
+stack = []
+
+stack.append(2) # push
+
+stack.pop() # pop
+
+len(stack) # length
+
+top = stack[-1] # top
+```
