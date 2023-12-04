@@ -24,3 +24,9 @@ This recursive approach ensures that the left subtree is traversed first, follow
 
 ##### stack in inorder traversal
 A stack can serve as an alternative to the recursive approach.
+
+Three key points to consider when using a stack for inorder traversal:
+
+- When a node is popped, it signifies that its entire left subtree has been traversed.
+- After popping a node, its right subtree should be added to the stack.
+- Null nodes should not be pushed onto the stack.
