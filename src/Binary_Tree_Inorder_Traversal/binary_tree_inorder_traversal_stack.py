@@ -5,12 +5,12 @@ from src.Binary_Tree_Inorder_Traversal.TreeNode import TreeNode
 
 class BinaryTreeInorderTraversalStack:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-        stack = []
-        traversal = []
+        stack: List[TreeNode] = []
+        traversal: List[int] = []
 
         curr = root
-        while curr is not None or len(stack) > 0:
-            if curr is not None:
+        while curr or len(stack) > 0:
+            if curr:
                 stack.append(curr)
                 curr = curr.left
             else:
