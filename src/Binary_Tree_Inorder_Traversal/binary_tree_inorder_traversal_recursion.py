@@ -3,7 +3,7 @@ from typing import Optional, List
 from src.Binary_Tree_Inorder_Traversal.TreeNode import TreeNode
 
 
-class BinaryTreeInorderTraversalStack:
+class BinaryTreeInorderTraversalRecursion:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         traversal: List[int] = []
 
