@@ -1,3 +1,22 @@
+- [Overview](#overview)
+- [Interpretation](#interpretation)
+  - [Process](#process)
+  - [Python runtime environment](#python-runtime-environment)
+    - [Python Virtual Machine (PVM)](#python-virtual-machine-pvm)
+- [Data Structure](#data-structure)
+  - [String](#string)
+    - [Insert a substring at index `i`](#insert-a-substring-at-index-i)
+    - [Find the index of a substring](#find-the-index-of-a-substring)
+  - [List](#list)
+    - [Update](#update)
+  - [Stack](#stack)
+  - [Differences between List and Tuple](#differences-between-list-and-tuple)
+- [Iteration](#iteration)
+  - [range function](#range-function)
+- [Scope](#scope)
+  - [Nested Function Utilizes Outer Scope Variables](#nested-function-utilizes-outer-scope-variables)
+
+
 # Overview
 Python is a high-level, interpreted, and general-purpose programming language.
 
@@ -47,15 +66,26 @@ The Python interpreter then executes the bytecode line by line. It translates ea
 The PVM abstracts the underlying hardware, providing a layer of virtualization that allows Python code to be platform-independent. It interprets or, in some implementations, compiles bytecode to machine code, making it possible for Python programs to run on various operating systems without modification.
 
 # Data Structure
-## Differences between List and Tuple
-- List:
-  - **Mutability**: Lists are mutable, meaning you can modify their contents (add, remove, or modify elements) after the list is created.
-  - **Syntax**: Lists are created using square brackets `[ ]`, examples: `my_list = [1, 2, 3, 'abc']`.
-  - **Performance**: Lists, being mutable, may require more memory and can have a slightly slower performance compared to tuples.
-- Tuple:
-  - **Mutability**: Tuples are immutable, which means once a tuple is created, you cannot change its values.
-  - **Syntax**: Tuples are created using parentheses `( )`, examples: `my_tuple = (1, 2, 3, 'abc')`.
-  - **Performance**: Tuples are generally more memory-efficient and can offer better performance in certain scenarios due to their immutability.
+## String
+### Insert a substring at index `i`
+```python
+s = "hello"
+s = s[: 3] + "</b>" + s[3 :] # at position 3
+```
+
+### Find the index of a substring
+```python
+s = "hello"
+find_index = s.find("ell", 0)  # (substring, start index of the original string)
+```
+
+## List
+### Update
+1. To update a slice of a list:
+```python
+bool_list = [True] * 10
+bool_list[3 : 7] = [True] * 4
+```
 
 
 ## Stack
@@ -73,7 +103,25 @@ len(stack) # length
 top = stack[-1] # top
 ```
 
+## Differences between List and Tuple
+- List:
+  - **Mutability**: Lists are mutable, meaning you can modify their contents (add, remove, or modify elements) after the list is created.
+  - **Syntax**: Lists are created using square brackets `[ ]`, examples: `my_list = [1, 2, 3, 'abc']`.
+  - **Performance**: Lists, being mutable, may require more memory and can have a slightly slower performance compared to tuples.
+- Tuple:
+  - **Mutability**: Tuples are immutable, which means once a tuple is created, you cannot change its values.
+  - **Syntax**: Tuples are created using parentheses `( )`, examples: `my_tuple = (1, 2, 3, 'abc')`.
+  - **Performance**: Tuples are generally more memory-efficient and can offer better performance in certain scenarios due to their immutability.
 
+
+# Iteration
+## range function
+To start from `x` and end at `0`:
+```python
+x = 8
+for i in range(x, -1, -1): # start, end, step
+    print(i)
+```
 
 # Scope
 ## Nested Function Utilizes Outer Scope Variables
