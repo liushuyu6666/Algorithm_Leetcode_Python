@@ -12,3 +12,5 @@ The image below illustrates that for a current node, its left subtree (blue sect
 As a result, the variable prev consistently points to the "last node" of the current node's left subtree.
 
 For a thorough understanding, please delve into the comment in the code.
+
+##### stack in inorder traversal
