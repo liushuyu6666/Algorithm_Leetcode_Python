@@ -79,6 +79,11 @@ s = "hello"
 find_index = s.find("ell", 0)  # (substring, start index of the original string)
 ```
 
+### Get ASCII
+```python
+ord('x')
+```
+
 ## List
 ### Update
 1. To update a slice of a list:
