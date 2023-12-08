@@ -85,6 +85,16 @@ ord('x')
 ```
 
 ## List
+## Initialize
+```python
+from typing import Optional, List
+
+class TrieNode:
+    def __init__(self):
+        self.child: List[Optional[TrieNode]] = [None] * 26
+        self.isWord = False
+```
+
 ### Update
 1. To update a slice of a list:
 ```python
