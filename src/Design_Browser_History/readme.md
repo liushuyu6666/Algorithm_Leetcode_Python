@@ -1,0 +1,2 @@
+# types
+## linked list
