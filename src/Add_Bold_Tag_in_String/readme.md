@@ -1,6 +1,7 @@
 # types
 ## string
 ### find index of substring
+### string rearrangement
 
 # caveats
 ## string
