@@ -102,6 +102,36 @@ bool_list = [True] * 10
 bool_list[3 : 7] = [True] * 4
 ```
 
+## heapq
+`heapq` is a built-in heap queue algorithm, also known as the priority queue algorithm.
+
+### Initialize
+```python
+from typing import List
+
+min_heap: List[int] = []  # The data structure of `heapq` is actually an array, so initializing `heapq` will be an array
+```
+
+### Push
+```python
+import heapq
+from typing import List
+
+min_heap: List[int] = []
+heapq.heappush(min_heap, 3)  # This method will keep `min_heap` as a heap
+```
+
+### Max Heap
+`heapq` only provides a min heap. To use it as a max heap:
+```python
+import heapq
+from typing import List
+
+max_heap: List[int] = []
+new_val = 10
+heapq.heappush(max_heap, -new_val)
+pop_val = -heapq.heappop(max_heap)
+```
 
 ## Stack
 While Python does not have a dedicated stack data structure, a list can effectively serve as a stack. A stack operates on the principle of FILO (First In, Last Out), where elements are added and removed from the top of the stack.
