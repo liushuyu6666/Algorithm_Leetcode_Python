@@ -1,0 +1,1 @@
+[Java version explanation](https://github.com/liushuyu6666/Algorithm_Leetcode_Java/tree/master/src/Last_Remaining_Number_in_Circle)
