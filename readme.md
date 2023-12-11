@@ -7,9 +7,16 @@
   - [String](#string)
     - [Insert a substring at index `i`](#insert-a-substring-at-index-i)
     - [Find the index of a substring](#find-the-index-of-a-substring)
+    - [Get ASCII](#get-ascii)
   - [List](#list)
+  - [Initialize](#initialize)
     - [Update](#update)
+  - [heapq](#heapq)
+    - [Initialize](#initialize-1)
+    - [Push](#push)
+    - [Max Heap](#max-heap)
   - [Stack](#stack)
+  - [2d array](#2d-array)
   - [Differences between List and Tuple](#differences-between-list-and-tuple)
 - [Iteration](#iteration)
   - [range function](#range-function)
@@ -147,6 +154,22 @@ len(stack) # length
 
 top = stack[-1] # top
 ```
+
+## 2d array
+Initialize a 2D array like this:
+
+```python
+from typing import List
+
+dp: List[List[int]] = [[False] * 3 for i in range(4)]  # 4 x 3
+```
+Avoid using this:
+```python
+from typing import List
+s = 'hello world'
+dp: List[List[int]] = [[False] * 3] * 4
+```
+As changing one element affects the entire column in the latter method. All rows in the later method always remain the same.
 
 ## Differences between List and Tuple
 - List:
